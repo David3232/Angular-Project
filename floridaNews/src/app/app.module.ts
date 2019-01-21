@@ -7,10 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SliderModule } from 'angular-image-slider';
 import { LatetstNewsComponent } from './latetst-news/latetst-news.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     ChangeTopicComponent,
+    LatetstNewsComponent
   ],
   imports: [
     BrowserModule,
