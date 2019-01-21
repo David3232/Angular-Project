@@ -16,5 +16,8 @@ export class AppComponent {
       '../assets/img/Robin.jpg',
       ];
   }
+   urls = ['../../assets/img/julen.jpg', '../../assets/img/nissan.jpg','../../assets/img/altavoz.png'];
+   parrafo = ['Julen, rescate del niño en el pozo de Totalán (Málaga)','Nissan desmiente que Francia le haya propuesto una fusion con Renault','Microsoft tira la toalla en la guerra de los asistentes de voz'];
+
 }
 
