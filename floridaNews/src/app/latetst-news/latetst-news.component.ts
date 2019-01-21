@@ -16,8 +16,8 @@ export class LatetstNewsComponent implements OnInit {
 
       console.log('Hola');
 
-    this.index = (this.index+1)%this.avatars.lenght;
-    }, 3000);
+    this.index = (this.index+1)%this.avatars.length;
+  }, 4500);
       console.log(this.index);
 }
 
