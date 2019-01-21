@@ -6,17 +6,14 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./latetst-news.component.css']
 })
 export class LatetstNewsComponent implements OnInit {
-  @Input() avatars = [];
-  avatars2 = [];
+  @Input() News = [];
+  @Input() Text = [];
   index = 0;
   constructor() { }
 
   ngOnInit() {
     setInterval( ()=>{
-
-      console.log('Hola');
-
-    this.index = (this.index+1)%this.avatars.length;
+    this.index = (this.index+1)%this.News.length;
   }, 4500);
       console.log(this.index);
 }

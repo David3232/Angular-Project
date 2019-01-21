@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'floridaNews';
-   urls = ['../../assets/img/julen.jpg', '../../assets/img/Robin.jpg'];
-   parrafo = [];
+   urls = ['../../assets/img/julen.jpg', '../../assets/img/nissan.jpg','../../assets/img/altavoz.png'];
+   parrafo = ['Julen, rescate del niño en el pozo de Totalán (Málaga)','Nissan desmiente que Francia le haya propuesto una fusion con Renault','Microsoft tira la toalla en la guerra de los asistentes de voz'];
+
 }
