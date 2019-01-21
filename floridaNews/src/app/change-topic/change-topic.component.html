@@ -1,5 +1,4 @@
-<h1>{{title}}{{topic}}</h1>
+<h1>{{title}}{{strSelected}}</h1>
 <button (click)="changeTopic()">Cambiar el tema.</button>
-<img src="{{imgEconomy}}" *ngIf="'economy' === topic" class="newPhoto">
-<img src="{{imgSports}}" *ngIf="'sports' === topic" class="newPhoto">
-<img src="{{imgCulture}}" *ngIf="'culture' === topic" class="newPhoto">
+<img src="{{imgSelected}}" class="newPhoto">
+<h3>{{newSelected}}</h3>
