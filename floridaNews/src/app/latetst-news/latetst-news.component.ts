@@ -15,7 +15,6 @@ export class LatetstNewsComponent implements OnInit {
     setInterval( ()=>{
     this.index = (this.index+1)%this.News.length;
   }, 4500);
-      console.log(this.index);
 }
 
 

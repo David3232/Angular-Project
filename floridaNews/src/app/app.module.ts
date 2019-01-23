@@ -6,13 +6,11 @@ import { ChangeTopicComponent } from './change-topic/change-topic.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SliderModule } from 'angular-image-slider';
 import { LatetstNewsComponent } from './latetst-news/latetst-news.component';
-import {SlideshowModule} from 'ng-simple-slideshow';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChangeTopicComponent,
-    SlideshowModule,
     LatetstNewsComponent
   ],
   imports: [
