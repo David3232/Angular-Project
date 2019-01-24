@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-change-topic',
@@ -16,6 +16,9 @@ export class ChangeTopicComponent implements OnInit {
   newSelected: string = 'Marc Gasol despierta y levanta a los Grizzlies delante de su hermano Pau';
   //Esta variable la usamos para controlar la posicion del array que contiene las noticias.
   arrayPosition: number = 1;
+  @Output() outputString = new EventEmitter();
+  @Output() outputImage = new EventEmitter();
+  @Output() outputNew = new EventEmitter();
 
   changeTopic() {
     /**
@@ -29,6 +32,12 @@ export class ChangeTopicComponent implements OnInit {
     if (this.arrayPosition > this.imgArray.length - 1) {
       this.arrayPosition = 0;
     }
+  }
+
+  addFavorites() {
+    this.outputString.emit( this.strSelected );
+    this.outputImage.emit( this.imgSelected );
+    this.outputNew.emit( this.newSelected );
   }
 
   ngOnInit() {

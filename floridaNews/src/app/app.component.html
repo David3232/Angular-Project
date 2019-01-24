@@ -11,18 +11,14 @@
       <latest-news [News]="urls" [Text]="parrafo"></latest-news>
   </div>
   <div class="box2">
-      <h1>INTERNACIONAL</h1>
-      <angular-image-slider [images]="imagesUrl"></angular-image-slider>
-      <h1>Cinco años de cárcel para dos antiguos directivos de Terra Mítica</h1>
+    <app-favorites [imgFavorites]="imgFavorites" [strFavorites]="strFavorites"></app-favorites>
   </div>
   <div class="box3">
-    <h1>FAVORITOS</h1>
-      <img src="" class="newPhoto">
-      <h1>El juez suspende el juicio por paternidad de Julio Iglesias</h1>
+    <h1>INTERNACIONAL</h1>
+    <angular-image-slider [images]="imagesUrl"></angular-image-slider>
   </div>
   <div class="box4">
-    <app-change-topic></app-change-topic>
-
+    <app-change-topic (outputImage)="addImgFavoritesArray($event)" (outputNew)="addStrFavoritesArray($event)"></app-change-topic>
   </div>
 </div>
 <footer>

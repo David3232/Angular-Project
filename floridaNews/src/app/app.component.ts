@@ -8,6 +8,21 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'floridaNews';
   public imagesUrl;
+  urls = ['../../assets/img/julen.jpg', '../../assets/img/nissan.jpg','../../assets/img/altavoz.png'];
+  parrafo = ['Julen, rescate del niño en el pozo de Totalán (Málaga)','Nissan desmiente que Francia le haya propuesto una fusion con Renault','Microsoft tira la toalla en la guerra de los asistentes de voz'];
+  imgFavorites = [];
+  strFavorites = [];
+
+  addImgFavoritesArray (event) {
+    this.imgFavorites = [];
+    this.imgFavorites.push(event);
+  }
+
+  addStrFavoritesArray (event) {
+    this.strFavorites = [];
+    this.strFavorites.push(event);
+  }
+
 
   ngOnInit() {
       this.imagesUrl = [
@@ -16,8 +31,6 @@ export class AppComponent {
       '../assets/img/Robin.jpg',
       ];
   }
-   urls = ['../../assets/img/julen.jpg', '../../assets/img/nissan.jpg','../../assets/img/altavoz.png'];
-   parrafo = ['Julen, rescate del niño en el pozo de Totalán (Málaga)','Nissan desmiente que Francia le haya propuesto una fusion con Renault','Microsoft tira la toalla en la guerra de los asistentes de voz'];
 
 }
 
